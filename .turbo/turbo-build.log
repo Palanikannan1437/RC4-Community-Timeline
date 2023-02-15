@@ -1,0 +1,16 @@
+
+> @palanikannan1437/rc4-ui@0.0.7 build /workspace/RC4-Community/packages/ui
+> tsup
+
+CLI Building entry: src/index.tsx
+CLI Using tsconfig: tsconfig.json
+CLI tsup v6.5.0
+CLI Using tsup config: /workspace/RC4-Community/packages/ui/tsup.config.ts
+CLI Target: es6
+ESM Build start
+DTS Build start
+ESM dist/index.css 8.94 KB
+ESM dist/index.mjs 4.79 KB
+ESM ⚡️ Build success in 1677ms
+DTS ⚡️ Build success in 2347ms
+DTS dist/index.d.ts 403.00 B
