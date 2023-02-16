@@ -1,7 +1,7 @@
 import * as React from "react";
-import { TimelineObjectType } from "@palanikannan1437/rc4-core";
-import { HorizontalTimeline } from "./timeline-variants/HorizontalTimeline";
-import { VerticalTimeline } from "./timeline-variants/VerticalTimeline";
+import { TimelineObjectType } from "@core/timelineAPI";
+import { HorizontalTimeline } from "@variants/HorizontalTimeline";
+import { VerticalTimeline } from "@variants/VerticalTimeline";
 
 export const Timeline = ({
   type,
@@ -10,15 +10,11 @@ export const Timeline = ({
   type: "vertical" | "horizontal";
   data: TimelineObjectType[];
 }) => {
-  if (type == "vertical" && data) {
-    return (
-      <VerticalTimeline data={data} />
-    );
-  } else if (type == "horizontal") {
-    return (
-      <HorizontalTimeline data={data} />
-    );
-  } else {1
+  if (type === "vertical" && data) {
+    return <VerticalTimeline data={data} />;
+  } else if (type === "horizontal" && data) {
+    return <HorizontalTimeline data={data} />;
+  } else {
     return null;
   }
 };

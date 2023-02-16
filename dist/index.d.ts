@@ -1,16 +1,18 @@
-import { TimelineObjectType } from '@palanikannan1437/rc4-core';
-
-declare const Button: () => JSX.Element;
-
-declare const Card: ({ title, cta, href, }: {
+declare function fetchTimelineData({ endpoint, transferType, }: {
+    endpoint: string;
+    transferType: (data: any) => TimelineObjectType[];
+}): Promise<TimelineObjectType[]>;
+type TimelineObjectType = {
+    id: any;
     title: string;
-    cta: string;
-    href: string;
-}) => JSX.Element;
+    meta: string;
+    subtitle: string;
+    description: string;
+};
 
 declare const Timeline: ({ type, data, }: {
     type: "vertical" | "horizontal";
     data: TimelineObjectType[];
 }) => JSX.Element | null;
 
-export { Button, Card, Timeline };
+export { Timeline, TimelineObjectType, fetchTimelineData };

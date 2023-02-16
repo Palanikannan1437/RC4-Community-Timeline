@@ -1,5 +1,6 @@
 // styles
-import "./styles.css";
+import "@ui/styles.css";
 
 // components
-export * from "./ui/Timeline"
+export * from "@ui/Timeline";
+export * from "@core/timelineAPI";
