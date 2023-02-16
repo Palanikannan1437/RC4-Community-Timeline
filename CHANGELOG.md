@@ -1,5 +1,11 @@
 # @palanikannan1437/rc4-ui
 
+## 0.0.2
+
+### Patch Changes
+
+- 031a5a4: Initialized Timeline component
+
 ## 0.0.7
 
 ### Patch Changes
