@@ -49,6 +49,7 @@
   },
   "dependencies": {
     "@storybook/addon-postcss": "^2.0.0",
-    "node-fetch": "^3.3.0"
+    "node-fetch": "^3.3.0",
+    "qs": "^6.11.0"
   }
 }
